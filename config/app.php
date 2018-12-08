@@ -166,6 +166,7 @@ return [
          */
          Laravel\Socialite\SocialiteServiceProvider::class,
          //Barryvdh\Debugbar\ServiceProvider::class,
+           JD\Cloudder\CloudderServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -225,6 +226,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         //'Debugbar' => Barryvdh\Debugbar\Facade::class,
+          'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
 
     ],
 
