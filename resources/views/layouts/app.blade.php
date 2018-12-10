@@ -61,7 +61,7 @@
                         @else
                             <li class="nav-item dropdown mr-2">
                               <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                Notifications <span class="caret"></span><span class="badge badge-secondary">{{$user->notifications->count()}}</span>
+                                Notifications <span class="caret"></span>
                               </a>
                               <notifications :user="{{ Auth::user()->id }}"></notifications>
                             </li>
