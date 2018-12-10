@@ -7,4 +7,12 @@
 </p>
 <div class="card-text text-muted float-right">
 	{{ $message->created_at }}
+  <br>
+  <form action="/messages/{{$message->id }}" method="post">
+    {!! csrf_field() !!}
+    <input type="hidden" name="_method" value="delete" />
+    <button class="btn btn-danger" type="submit">Delete</button>
+
+</form>
+
 </div>

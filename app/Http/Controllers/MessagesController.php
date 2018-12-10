@@ -51,4 +51,11 @@ class MessagesController extends Controller
     public function responses(Message $message){
       return $message->responses;
     }
+
+    public function destroy(Message $message){
+      //$message = Message::where('id', $id)->firstOrFail();
+      $message->delete();
+
+      return redirect('/')->withSuccess('message deleted');
+    }
 }
