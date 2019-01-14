@@ -9,7 +9,6 @@
         "prod": "npm run production",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "heroku-postbuild": "npm run production"
-
     },
     "dependencies": {
         "axios": "^0.18",
@@ -17,7 +16,7 @@
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-echo": "^1.5.1",
-        "laravel-mix": "^3.0.0",
+        "laravel-mix": "^4.0.13",
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
         "pusher-js": "^4.3.1",
